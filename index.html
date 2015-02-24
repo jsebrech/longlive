@@ -185,9 +185,9 @@
           <h3>Popular !== Good</h3>
           <aside class="notes">
             The deep integration between GUI and DB was a bad idea.
-            Had we chosen a proper three-tier architecture,
+            Had we chosen a three-tier architecture,
             we could have repurposed the existing codebase to the web.
-            Instead we had to rewrite everything.
+            Instead we had to build a web product line from scratch.
           </aside>
         </section>
 
@@ -234,15 +234,6 @@
           </aside>
         </section>
 
-        <section>
-          <img src="images/waldorfandstatler.jpg">
-          <aside class="notes">
-            People who stay a long time on a codebase tend to become curmudgeons,
-            because they've seen these anti-patterns one too many times.
-            <a href="https://www.youtube.com/watch?v=Z693R4dxD_A">Image: youtube</a>
-          </aside>
-        </section>
-
         <section data-background="images/potterybarn.jpg">
           <h3 class="opaque fragment" style="display:inline; padding: 0.5em 1em;">You break it, you bought it</h3>
           <aside class="notes">
@@ -282,10 +273,22 @@
           </aside>
         </section>
 
+        <section>
+          <img src="images/waldorfandstatler.jpg">
+          <aside class="notes">
+            People who don't act like children will go the other direction and become curmudgeons,
+            because they've seen these anti-patterns one too many times.
+            <a href="https://www.youtube.com/watch?v=Z693R4dxD_A">Image: youtube</a>
+          </aside>
+        </section>
+    
         <section data-background="images/nand-verrekijker.jpg" data-background-color="#004000">
           <p class="opaque fragment" style="position: relative; top: -200px; display: inline; padding: 0.5em 1em;">&lt;? php</p>
           <aside class="notes">
-            Eventually you have to leave behind childish things, look beyond the obvious and set a course towards the future.
+            Eventually you have to leave behind childish things, act as a team,
+            look beyond the now and set a course towards the future.
+            Most of all you want a second chance at getting it right the first time, 
+            ours was our web product line.
           </aside>
         </section>
 
@@ -395,7 +398,7 @@
           <aside class="notes">
             You see the same anti-patterns repeat, because it's easy to go down the same bad paths,
             and lessons are hard-won yet easily lost.
-            Organizations don't learn, only people do, and they only learn through mistakes.
+            Organizations don't learn, only people do, and they mostly only learn through mistakes.
             Some people need to make the same mistake multiple times before they learn, and some never learn.
             An organization only learns a lesson when everybody who is involved in the decision-making has learned that lesson.
           </aside>
@@ -433,17 +436,14 @@
         </section>
 
         <section data-background="images/nyskyline.jpg">
-          <ul class="opaque-inline fragment">
-            <li>Hire professionals</li>
-            <li>Commit to best practice</li>
-            <li>Think before you act</li>
-          </ul>
+          <p class="opaque fragment">hiring professionals</p>
+          <p class="opaque fragment">prototyping | hallway user testing</p>
+          <p class="opaque fragment">whiteboarding | blueprints | design reviews</p>
+          <p class="opaque fragment">style guide | code reviews | linting</p>
+          <p class="opaque fragment">automated testing | continuous integration</p>
           <aside class="notes">
             Hiring professionals means hiring for a professional attitude, not years of experience.
             After all, you can have 1 year of experience 20 times.
-            Agreeing on best practices means teaching them to the whole team, and enforcing them through review.
-            Thinking before you act is a key principle of every phase of construction.
-            The most costly mistakes are made before the first line of code is written.
           </aside>
         </section>
 
@@ -551,7 +551,7 @@
         <section data-background="#004000">
           <img src="images/linesofcode.png" style="height: 200%;">
           <aside class="notes">
-            Studies have found that 500 lines of debugged code per developer-month is on the high end of productivity.
+            Studies have found that 500 lines of debugged code added per developer-month is normal wrt. productivity.
             A rewrite project of a 100.000 line codebase therefore requires 200 developer-months to complete.
             Rewrites rarely make financial sense. Either you hire a big new team to do the rewrite,
             or you choose to let the old product stand still (losing sales) during the (long) rewrite.<br>
@@ -560,9 +560,9 @@
         </section>
 
         <section>
-          <h3>Refactoring step by step</h3>
+          <h3>Refactoring advice</h3>
           <br>
-          <ol style="position: relative; left: 1em;">
+          <ol class="fragment" style="position: relative; left: 1em;">
             <li class="fragment">Understand why</li>
             <li class="fragment">Document user requirements</li>
             <li class="fragment">Work in small increments</li>
@@ -572,7 +572,7 @@
             You don't start a refactoring without knowing where you're going.
             You don't rebuild a feature's UI without tracking existing user requirements for that feature.
             You don't try to bite off too much at one time. We migrated to the new UI outside-in, screen per screen, feature per feature.
-            A few people have to lay the groundwork (build/integrate core technoology, write guidelines, teach guidelines),
+            A few people have to lay the groundwork (build/integrate core technology, write guidelines, teach guidelines),
             but the actual migration goes smoothest if everyone migrates existing features as they work to extend them.
             Assigning a dedicated team on refactoring and letting everyone else keep going in the old way slows you down too much.
           </aside>
